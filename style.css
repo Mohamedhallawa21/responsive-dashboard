@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #001;
+  display: flex;
+}
+.profile {
+  /* padding-top: 10px; */
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.img-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid white;
+  flex-shrink: 0;
+}
+.img-box img {
+  width: 100%;
+  height: 100%;
+}
+.menu {
+  height: 100vh;
+  width: 60px;
+  background-color: #123;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.menu:hover {
+  width: 260px;
+}
+ul {
+  list-style: none;
+  position: relative;
+  height: 100%;
+  margin: auto;
+}
+ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  transition: 0.5s;
+}
+ul li a:hover,
+.active,
+.box:hover,
+td:hover {
+  background-color: #ffffff55;
+}
+.log-out {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 5px;
+}
+.log-out a {
+  background-color: red;
+}
+ul li a i {
+  font-size: 30px;
+}
+ul li a p {
+  text-transform: capitalize;
+}
+.content {
+  width: 100%;
+}
+.data-title {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background: purple;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+.data-info {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+.box {
+  background: #123;
+  flex-basis: 150px;
+  height: 150px;
+  flex-grow: 1;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: 0.5s;
+}
+.data-info .box i {
+  font-size: 40px;
+}
+.data-info .box .data {
+  text-align: center;
+}
+.data-info .box p {
+  text-transform: capitalize;
+}
+.data-info .box span {
+  font-size: 30px;
+}
+table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 8px;
+}
+td,
+th {
+  background: #123;
+  border-radius: 8px;
+  height: 40px;
+  transition: 0.5s;
+}
+th {
+  background: purple;
+}
+.price,
+.count {
+  padding: 8px;
+  border-radius: 8px;
+}
+.price {
+  background: green;
+}
+.count {
+  background: gold;
+  color: black;
+}
